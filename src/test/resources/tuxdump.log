@@ -1,0 +1,5014 @@
+The LD_LIBRARY_PATH is /psoft/patst91/jre1.7.0/lib/amd64/server:/psoft/patst91/jre1.7.0/lib/amd64:/psoft/patst91/jre1.7.0/../lib/amd64:/psoft/patst91/jre/lib/amd64/native_threads:/psoft/patst91/jre/lib/amd64/server:/psoft/patst91/jre/lib/amd64:/psoft/bea/Oracle/tuxedo11gR1/lib:/opt/microfocus/cobol/lib:/home/db2cli/sqllib/lib64:/home/db2cli/sqllib/lib32:/psoft/patst91/bin:/psoft/patst91/bin/interfacedrivers:/psoft/patst91/bin/sqr/ORA/bin:/psoft/patst91/optbin:/psoft/patst91/verity/linux/_ilnx21/bin:/home/oracle/app/oracle/product/11.2.0/client_1/lib
+Printing the command echo on
+ERROR:tmadmin - Copyright (c) 1996-2010 Oracle.
+ERROR:Portions * Copyright 1986-1997 RSA Data Security, Inc.
+ERROR:All Rights Reserved.
+ERROR:Distributed under license by Oracle.
+ERROR:Tuxedo is a registered trademark.
+ERROR:TMADMIN_CAT:199: WARN: Cannot become administrator.Limited set of commands available.
+
+> Echo now on.
+
+
+Printing the command verbose on
+> verbose on
+Verbose now on.
+
+Printing Messages in Verbose ON mode
+Printing the command bbp
+> bbp
+Bulletin Board Parameters:
+      MAXSERVERS: 60
+     MAXSERVICES: 362
+    MAXACCESSERS: 459
+          MAXGTT: 0
+         MAXCONV: 50
+      MAXBUFTYPE: 16
+     MAXBUFSTYPE: 32
+      MAXOBJECTS: 1000
+   MAXINTERFACES: 150
+          IPCKEY: 98544
+          MASTER: test-ps-app1.erp.ufl.edu
+           MODEL: SHM
+           LDBAL: N
+        SCANUNIT: 5
+      SANITYSCAN: 2
+        DBBLWAIT: 2
+        BBLQUERY: 30
+       BLOCKTIME: 6000
+Shared Memory ID: 1998853
+
+Printing the command bbls
+> bbls
+
+IPC resources for the bulletin board on machine test-ps-app1.erp.ufl.edu:
+SHARED MEMORY:          Key: 0x180f0
+SEGMENT 0:
+                         ID: 1998853
+                       Size: 1535548
+         Attached processes: 48
+      Last attach/detach by: 29277
+
+This semaphore is the system semaphore
+SEMAPHORE:              Key: 0x180f0
+                         Id: 1605638
+       | semaphore  | current |   last    | # waiting |
+       |   number   | status  |  accesser | processes |
+       |----------------------------------------------|
+       |      0     |   free  |     30556 |     0     |
+       |      1     |   free  |         0 |     0     |
+       |      2     |   free  |     30556 |     0     |
+       |      3     | locked  |     30556 |     0     |
+       |      4     | locked  |     30556 |     0     |
+       |------------|---------|-----------|-----------|
+
+This semaphore set is part of the user-level semaphore
+SEMAPHORE:              Key: IPC_PRIVATE
+                         Id: 1671175
+       | semaphore  | current |   last    | # waiting |
+       |   number   | status  |  accesser | processes |
+       |----------------------------------------------|
+       |      0     | locked  |         0 |     0     |
+       |      1     | locked  |         0 |     0     |
+       |      2     | locked  |         0 |     0     |
+       |      3     | locked  |         0 |     0     |
+       |      4     | locked  |         0 |     0     |
+       |      5     | locked  |         0 |     0     |
+       |      6     | locked  |         0 |     0     |
+       |      7     | locked  |         0 |     0     |
+       |      8     | locked  |         0 |     0     |
+       |      9     | locked  |         0 |     0     |
+       |     10     | locked  |         0 |     0     |
+       |     11     | locked  |         0 |     0     |
+       |     12     | locked  |         0 |     0     |
+       |     13     | locked  |         0 |     0     |
+       |     14     | locked  |         0 |     0     |
+       |     15     | locked  |         0 |     0     |
+       |     16     | locked  |         0 |     0     |
+       |     17     | locked  |         0 |     0     |
+       |     18     | locked  |         0 |     0     |
+       |     19     | locked  |         0 |     0     |
+       |     20     | locked  |         0 |     0     |
+       |     21     | locked  |         0 |     0     |
+       |     22     | locked  |         0 |     0     |
+       |     23     | locked  |         0 |     0     |
+       |     24     | locked  |         0 |     0     |
+       |     25     | locked  |         0 |     0     |
+       |     26     | locked  |         0 |     0     |
+       |     27     | locked  |         0 |     0     |
+       |     28     | locked  |         0 |     0     |
+       |     29     | locked  |         0 |     0     |
+       |     30     | locked  |         0 |     0     |
+       |     31     | locked  |         0 |     0     |
+       |     32     | locked  |         0 |     0     |
+       |     33     | locked  |         0 |     0     |
+       |     34     | locked  |         0 |     0     |
+       |     35     | locked  |         0 |     0     |
+       |     36     | locked  |         0 |     0     |
+       |     37     | locked  |         0 |     0     |
+       |     38     | locked  |         0 |     0     |
+       |     39     | locked  |         0 |     0     |
+       |     40     | locked  |         0 |     0     |
+       |     41     | locked  |         0 |     0     |
+       |     42     | locked  |         0 |     0     |
+       |     43     | locked  |         0 |     0     |
+       |     44     | locked  |         0 |     0     |
+       |     45     | locked  |         0 |     0     |
+       |     46     | locked  |         0 |     0     |
+       |     47     | locked  |         0 |     0     |
+       |     48     | locked  |         0 |     0     |
+       |     49     | locked  |         0 |     0     |
+       |     50     | locked  |         0 |     0     |
+       |     51     | locked  |         0 |     0     |
+       |     52     | locked  |         0 |     0     |
+       |     53     | locked  |         0 |     0     |
+       |     54     | locked  |         0 |     0     |
+       |     55     | locked  |         0 |     0     |
+       |     56     | locked  |         0 |     0     |
+       |     57     | locked  |         0 |     0     |
+       |     58     | locked  |         0 |     0     |
+       |     59     | locked  |         0 |     0     |
+       |     60     | locked  |     14035 |     0     |
+       |     61     | locked  |         0 |     0     |
+       |     62     | locked  |         0 |     0     |
+       |     63     | locked  |     30556 |     0     |
+       |     64     | locked  |         0 |     0     |
+       |     65     | locked  |         0 |     0     |
+       |     66     | locked  |         0 |     0     |
+       |     67     | locked  |         0 |     0     |
+       |     68     | locked  |         0 |     0     |
+       |     69     | locked  |         0 |     0     |
+       |     70     | locked  |         0 |     0     |
+       |     71     | locked  |         0 |     0     |
+       |     72     | locked  |         0 |     0     |
+       |     73     | locked  |         0 |     0     |
+       |     74     | locked  |         0 |     0     |
+       |     75     | locked  |         0 |     0     |
+       |     76     | locked  |         0 |     0     |
+       |     77     | locked  |         0 |     0     |
+       |     78     | locked  |         0 |     0     |
+       |     79     | locked  |         0 |     0     |
+       |------------|---------|-----------|-----------|
+
+
+Printing the command bbs
+> bbs
+Current Bulletin Board Status:
+          Current number of servers: 42
+         Current number of services: 256
+   Current number of request queues: 37
+    Current number of server groups: 8
+       Current number of interfaces: 0
+
+Printing the command pc
+> pc
+
+Printing the command  pclt
+>  pclt
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 89293013
+                          User Name: patst
+                   Application Name: JSH
+                    Network Address: -
+                     Time Connected: 243:13:14
+          Requests Outstanding/Made: 0/2395
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 9
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 89325782
+                          User Name: patst
+                   Application Name: JSH
+                    Network Address: -
+                     Time Connected: 243:13:14
+          Requests Outstanding/Made: 0/2987
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 12
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 89358551
+                          User Name: patst
+                   Application Name: JSH
+                    Network Address: -
+                     Time Connected: 243:13:14
+          Requests Outstanding/Made: 0/2501
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 10
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 89391320
+                          User Name: patst
+                   Application Name: JSH
+                    Network Address: -
+                     Time Connected: 243:13:14
+          Requests Outstanding/Made: 0/1905
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 7
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 89424089
+                          User Name: patst
+                   Application Name: JSH
+                    Network Address: -
+                     Time Connected: 243:13:14
+          Requests Outstanding/Made: 0/2964
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 12
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+                               LMID: test-ps-app1.erp.ufl.edu
+                Reply queue address: 120782848
+                          User Name: patst
+                   Application Name: tmadmin
+                    Network Address: -
+                     Time Connected: 0:00:10
+          Requests Outstanding/Made: 0/0
+     Conversations Active/Initiated: 0/0
+                 Transactions Begun: 0
+             Transactions Committed: 0
+               Transactions Aborted: 0
+        Transactions Begun Per Hour: 0
+             Requests Made Per Hour: 0
+   Conversations Initiated Per Hour: 0
+                             Status: IDLE
+
+Printing the command pg
+> pg
+
+Server group parameters:
+
+                 Group Name: PUBSUB
+               Group Number: 98
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: JSLGRP
+               Group Number: 95
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: MONITOR
+               Group Number: 50
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: PPMGRP
+               Group Number: 91
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: APPSRV
+               Group Number: 99
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: BASE
+               Group Number: 1
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: JREPGRP
+               Group Number: 94
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+                 Group Name: WATCH
+               Group Number: 10
+            Primary Machine: test-ps-app1.erp.ufl.edu
+            Current Machine: test-ps-app1.erp.ufl.edu
+
+Printing the command pif
+> pif
+
+Printing the command pnw
+> pnw
+
+	No network LMIDs available
+Printing the command pq
+> pq
+            Prog Name: /psoft/patst91/bin/PSAPPSRV
+           Queue Name: APPQ
+   # Servers on Queue: 3
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKHND
+           Queue Name: BRKHQ_dflt
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBDSP
+           Queue Name: SUBDQ_dflt
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBHND
+           Queue Name: SUBHQ_SNCSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBHND
+           Queue Name: SUBHQ_WRKSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBDSP
+           Queue Name: SUBDQ_SNCSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKDSP
+           Queue Name: BRKDQ_dflt
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKDSP
+           Queue Name: BRKDQ_USRBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKDSP
+           Queue Name: BRKDQ_SNCBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/JSL
+           Queue Name: 00095.00200
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSWATCHSRV
+           Queue Name: WATCH
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBHND
+           Queue Name: PUBHQ_dflt
+   # Servers on Queue: 3
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKHND
+           Queue Name: BRKHQ_PERBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKDSP
+           Queue Name: BRKDQ_PERBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBDSP
+           Queue Name: PUBDQ_dflt
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBHND
+           Queue Name: PUBHQ_WRKPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBHND
+           Queue Name: PUBHQ_PERPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/JREPSVR
+           Queue Name: 00094.00250
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBHND
+           Queue Name: SUBHQ_PERSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKHND
+           Queue Name: BRKHQ_SNCBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSMONITORSRV
+           Queue Name: MONITOR
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBHND
+           Queue Name: PUBHQ_USRPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBDSP
+           Queue Name: SUBDQ_PERSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBDSP
+           Queue Name: PUBDQ_PERPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBHND
+           Queue Name: PUBHQ_SNCPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBHND
+           Queue Name: SUBHQ_USRSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBDSP
+           Queue Name: SUBDQ_USRSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKHND
+           Queue Name: BRKHQ_USRBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKDSP
+           Queue Name: BRKDQ_WRKBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBDSP
+           Queue Name: PUBDQ_WRKPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBDSP
+           Queue Name: SUBDQ_WRKSUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSUBHND
+           Queue Name: SUBHQ_dflt
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBDSP
+           Queue Name: PUBDQ_SNCPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSPUBDSP
+           Queue Name: PUBDQ_USRPUB
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSSAMSRV
+           Queue Name: SAMQ
+   # Servers on Queue: 2
+       Server Options: CONVERSATIONS, RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/patst91/bin/PSBRKHND
+           Queue Name: BRKHQ_WRKBRK
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: 6
+      Restart Command: (restartsrv)
+         Grace Period: 0 hour 1 mins
+           Queue Type: USER
+
+            Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/BBL
+           Queue Name: 98544
+   # Servers on Queue: 1
+       Server Options: RESTARTABLE
+       Max # Restarts: unlimited
+      Restart Command: (restartsrv)
+         Grace Period: n/a
+           Queue Type: ADMIN
+
+Printing the command pr
+> pr
+
+Printing the command psr
+> psr
+        Group ID: PUBSUB, Server ID: 1200
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30792, Request Qaddr: 88735940, Reply Qaddr: 88768709
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBDSP
+      Queue Name: SUBDQ_SNCSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:51 AM EDT
+         Up time: 243:13:22
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 600
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30725, Request Qaddr: 87949484, Reply Qaddr: 87982253
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBDSP
+      Queue Name: SUBDQ_USRSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:44 AM EDT
+         Up time: 243:13:29
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: test-ps-app1.erp.ufl.edu, Server ID: 0
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30556, Request Qaddr: 86573194, Reply Qaddr: 86573194
+     Server Type: ADMIN
+       Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/BBL
+      Queue Name: 98544
+         Options: RESTARTABLE
+  Max # Restarts: unlimited
+ Restart Command: (restartsrv)
+    Grace Period: n/a
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:29 AM EDT
+         Up time: 243:13:44
+   Requests done: 22387
+       Load done: 1119350
+  Current Status: (  IDLE )
+
+        Group ID: MONITOR, Server ID: 1
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 24662, Request Qaddr: 89194706, Reply Qaddr: 89227475
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSMONITORSRV
+      Queue Name: MONITOR
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Fri 11 Apr 2014 09:41:07 AM EDT
+         Up time: 3:14:06
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1201
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30789, Request Qaddr: 88670402, Reply Qaddr: 88703171
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBHND
+      Queue Name: SUBHQ_SNCSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:50 AM EDT
+         Up time: 243:13:23
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 601
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30722, Request Qaddr: 87883946, Reply Qaddr: 87916715
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBHND
+      Queue Name: SUBHQ_USRSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:43 AM EDT
+         Up time: 243:13:30
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: APPSRV, Server ID: 1
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30561, Request Qaddr: 86769805, Reply Qaddr: 86802574
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSAPPSRV
+      Queue Name: APPQ
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:32 AM EDT
+         Up time: 243:13:41
+   Requests done: 4234
+       Load done: 211700
+  Current Status: (  IDLE )
+
+        Group ID: WATCH, Server ID: 1
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 26198, Request Qaddr: 86704267, Reply Qaddr: 86737036
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSWATCHSRV
+      Queue Name: WATCH
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Fri 11 Apr 2014 11:00:07 AM EDT
+         Up time: 1:55:06
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: APPSRV, Server ID: 2
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30582, Request Qaddr: 86769805, Reply Qaddr: 86868112
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSAPPSRV
+      Queue Name: APPQ
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:33 AM EDT
+         Up time: 243:13:40
+   Requests done: 4239
+       Load done: 211950
+  Current Status: (  IDLE )
+
+          Group ID: APPSRV, Server ID: 3
+        Machine ID: test-ps-app1.erp.ufl.edu
+        Process ID: 30603, Request Qaddr: 86769805, Reply Qaddr: 86933649
+       Server Type: USER
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+           Options: RESTARTABLE
+    Max # Restarts: 6
+   Restart Command: (restartsrv)
+      Grace Period: 0 hour 1 mins
+        Generation: 1, Max message type: 1073741824
+     Creation time: Tue 01 Apr 2014 09:41:33 AM EDT
+           Up time: 243:13:40
+     Requests done: 4240
+         Load done: 212000
+    Current Status: (  IDLE )
+
+        Group ID: JREPGRP, Server ID: 250
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30850, Request Qaddr: 89456858, Reply Qaddr: 89456858
+     Server Type: USER
+       Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/JREPSVR
+      Queue Name: 00094.00250
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:56 AM EDT
+         Up time: 243:13:17
+   Requests done: 39
+       Load done: 1950
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1100
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30773, Request Qaddr: 88604864, Reply Qaddr: 88637633
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBDSP
+      Queue Name: PUBDQ_SNCPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:50 AM EDT
+         Up time: 243:13:23
+   Requests done: 14
+       Load done: 700
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 500
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30706, Request Qaddr: 87818408, Reply Qaddr: 87851177
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBDSP
+      Queue Name: PUBDQ_USRPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:42 AM EDT
+         Up time: 243:13:31
+   Requests done: 7
+       Load done: 350
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1101
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30769, Request Qaddr: 88539326, Reply Qaddr: 88572095
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_SNCPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:49 AM EDT
+         Up time: 243:13:24
+   Requests done: 7
+       Load done: 350
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 501
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30702, Request Qaddr: 87752870, Reply Qaddr: 87785639
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_USRPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:42 AM EDT
+         Up time: 243:13:31
+   Requests done: 42
+       Load done: 2100
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1000
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30766, Request Qaddr: 88473788, Reply Qaddr: 88506557
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKDSP
+      Queue Name: BRKDQ_SNCBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:48 AM EDT
+         Up time: 243:13:25
+   Requests done: 11
+       Load done: 550
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 400
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30699, Request Qaddr: 87687332, Reply Qaddr: 87720101
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKDSP
+      Queue Name: BRKDQ_USRBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:41 AM EDT
+         Up time: 243:13:32
+   Requests done: 3
+       Load done: 150
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1001
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30763, Request Qaddr: 88408250, Reply Qaddr: 88441019
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKHND
+      Queue Name: BRKHQ_SNCBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:48 AM EDT
+         Up time: 243:13:25
+   Requests done: 7
+       Load done: 350
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 401
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30696, Request Qaddr: 87621794, Reply Qaddr: 87654563
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKHND
+      Queue Name: BRKHQ_USRBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:41 AM EDT
+         Up time: 243:13:32
+   Requests done: 14
+       Load done: 700
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1500
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30824, Request Qaddr: 89129168, Reply Qaddr: 89161937
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBDSP
+      Queue Name: SUBDQ_PERSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:55 AM EDT
+         Up time: 243:13:18
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 900
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30760, Request Qaddr: 88342712, Reply Qaddr: 88375481
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBDSP
+      Queue Name: SUBDQ_WRKSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:47 AM EDT
+         Up time: 243:13:26
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 300
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30693, Request Qaddr: 87556256, Reply Qaddr: 87589025
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBDSP
+      Queue Name: SUBDQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:40 AM EDT
+         Up time: 243:13:33
+   Requests done: 50
+       Load done: 2500
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1501
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30821, Request Qaddr: 89063630, Reply Qaddr: 89096399
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBHND
+      Queue Name: SUBHQ_PERSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:54 AM EDT
+         Up time: 243:13:19
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 901
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30756, Request Qaddr: 88277174, Reply Qaddr: 88309943
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBHND
+      Queue Name: SUBHQ_WRKSUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:47 AM EDT
+         Up time: 243:13:26
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 301
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30690, Request Qaddr: 87490718, Reply Qaddr: 87523487
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSUBHND
+      Queue Name: SUBHQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:40 AM EDT
+         Up time: 243:13:33
+   Requests done: 35
+       Load done: 1750
+  Current Status: (  IDLE )
+
+        Group ID: JSLGRP, Server ID: 200
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30844, Request Qaddr: 89260244, Reply Qaddr: 89260244
+     Server Type: USER
+       Prog Name: /psoft/bea/Oracle/tuxedo11gR1/bin/JSL
+      Queue Name: 00095.00200
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:56 AM EDT
+         Up time: 243:13:17
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1400
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30805, Request Qaddr: 88998092, Reply Qaddr: 89030861
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBDSP
+      Queue Name: PUBDQ_PERPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:53 AM EDT
+         Up time: 243:13:20
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 800
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30738, Request Qaddr: 88211636, Reply Qaddr: 88244405
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBDSP
+      Queue Name: PUBDQ_WRKPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:46 AM EDT
+         Up time: 243:13:27
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 200
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30674, Request Qaddr: 87425178, Reply Qaddr: 87457949
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBDSP
+      Queue Name: PUBDQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:38 AM EDT
+         Up time: 243:13:35
+   Requests done: 20
+       Load done: 1000
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1401
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30801, Request Qaddr: 88932554, Reply Qaddr: 88965323
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_PERPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:53 AM EDT
+         Up time: 243:13:20
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 801
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30734, Request Qaddr: 88146098, Reply Qaddr: 88178867
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_WRKPUB
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:45 AM EDT
+         Up time: 243:13:28
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 201
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30662, Request Qaddr: 87228568, Reply Qaddr: 87261337
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:36 AM EDT
+         Up time: 243:13:37
+   Requests done: 3
+       Load done: 150
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 202
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30666, Request Qaddr: 87228568, Reply Qaddr: 87326875
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:37 AM EDT
+         Up time: 243:13:36
+   Requests done: 4
+       Load done: 200
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 203
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30670, Request Qaddr: 87228568, Reply Qaddr: 87392412
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSPUBHND
+      Queue Name: PUBHQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:37 AM EDT
+         Up time: 243:13:36
+   Requests done: 3
+       Load done: 150
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1300
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30798, Request Qaddr: 88867016, Reply Qaddr: 88899785
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKDSP
+      Queue Name: BRKDQ_PERBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:52 AM EDT
+         Up time: 243:13:21
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 700
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30731, Request Qaddr: 88080560, Reply Qaddr: 88113329
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKDSP
+      Queue Name: BRKDQ_WRKBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:45 AM EDT
+         Up time: 243:13:28
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 100
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30659, Request Qaddr: 87163030, Reply Qaddr: 87195799
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKDSP
+      Queue Name: BRKDQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:36 AM EDT
+         Up time: 243:13:37
+   Requests done: 39
+       Load done: 1950
+  Current Status: (  IDLE )
+
+        Group ID: APPSRV, Server ID: 100
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30624, Request Qaddr: 86966415, Reply Qaddr: 86999186
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSAMSRV
+      Queue Name: SAMQ
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:34 AM EDT
+         Up time: 243:13:39
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 1301
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30795, Request Qaddr: 88801478, Reply Qaddr: 88834247
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKHND
+      Queue Name: BRKHQ_PERBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:51 AM EDT
+         Up time: 243:13:22
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 701
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30728, Request Qaddr: 88015022, Reply Qaddr: 88047791
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKHND
+      Queue Name: BRKHQ_WRKBRK
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:44 AM EDT
+         Up time: 243:13:29
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+        Group ID: PUBSUB, Server ID: 101
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30656, Request Qaddr: 87097491, Reply Qaddr: 87130261
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSBRKHND
+      Queue Name: BRKHQ_dflt
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:35 AM EDT
+         Up time: 243:13:38
+   Requests done: 45
+       Load done: 2250
+  Current Status: (  IDLE )
+
+        Group ID: APPSRV, Server ID: 101
+      Machine ID: test-ps-app1.erp.ufl.edu
+      Process ID: 30640, Request Qaddr: 86966415, Reply Qaddr: 87064724
+     Server Type: USER
+       Prog Name: /psoft/patst91/bin/PSSAMSRV
+      Queue Name: SAMQ
+         Options: RESTARTABLE
+  Max # Restarts: 6
+ Restart Command: (restartsrv)
+    Grace Period: 0 hour 1 mins
+      Generation: 1, Max message type: 1073741824
+   Creation time: Tue 01 Apr 2014 09:41:35 AM EDT
+         Up time: 243:13:38
+   Requests done: 0
+       Load done: 0
+  Current Status: (  IDLE )
+
+Printing the command psc
+> psc
+      Service Name: PSSUBDSP_SNCSUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSSUBDSP
+        Queue Name: SUBDQ_SNCSUB
+        Process ID: 30792, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1200
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBDSP_USRSUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSSUBDSP
+        Queue Name: SUBDQ_USRSUB
+        Process ID: 30725, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 600
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBHND_SNCSUB
+      Service Type: USER
+      Routine Name: SubConProcess
+         Prog Name: /psoft/patst91/bin/PSSUBHND
+        Queue Name: SUBHQ_SNCSUB
+        Process ID: 30789, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1201
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBHND_USRSUB
+      Service Type: USER
+      Routine Name: SubConProcess
+         Prog Name: /psoft/patst91/bin/PSSUBHND
+        Queue Name: SUBHQ_USRSUB
+        Process ID: 30722, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 601
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlQuery
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICQuery
+      Service Type: USER
+      Routine Name: ICQuery
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetDebugParms
+      Service Type: USER
+      Routine Name: GetDebugParms
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SamGetParmsSvc
+      Service Type: USER
+      Routine Name: SamGetParmsSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetTimeOut
+      Service Type: USER
+      Routine Name: StmGetTimeOut
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmChgPswd
+      Service Type: USER
+      Routine Name: StmChgPswd
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlRequest
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RamList
+      Service Type: USER
+      Routine Name: RamList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetWebProfile
+      Service Type: USER
+      Routine Name: GetWebProfile
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Template
+      Service Type: USER
+      Routine Name: Template
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: HomepageT
+      Service Type: USER
+      Routine Name: HomepageT
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 117
+    Current status: AVAILABLE
+
+      Service Name: FileAttach
+      Service Type: USER
+      Routine Name: FileAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICLifeEvent
+      Service Type: USER
+      Routine Name: ICLifeEvent
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICWorkList
+      Service Type: USER
+      Routine Name: ICWorkList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1
+    Current status: AVAILABLE
+
+      Service Name: ICNav
+      Service Type: USER
+      Routine Name: ICNav
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICScript
+      Service Type: USER
+      Routine Name: ICScript
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2571
+    Current status: AVAILABLE
+
+      Service Name: ICPanel
+      Service Type: USER
+      Routine Name: ICPanel
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 108
+    Current status: AVAILABLE
+
+      Service Name: IsValidUserSvc
+      Service Type: USER
+      Routine Name: IsValidUserSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: WsrpPortletSvc
+      Service Type: USER
+      Routine Name: WsrpPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaPortletSvc
+      Service Type: USER
+      Routine Name: JavaPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: KeyStore
+      Service Type: USER
+      Routine Name: KeyStore
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PortalRegistry
+      Service Type: USER
+      Routine Name: PortalRegistry
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1250
+    Current status: AVAILABLE
+
+      Service Name: PSBusInterlink
+      Service Type: USER
+      Routine Name: PSBusInterlink
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: IntegrationSvc
+      Service Type: USER
+      Routine Name: IntegrationSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBusComp
+      Service Type: USER
+      Routine Name: PSBusComp
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSession
+      Service Type: USER
+      Routine Name: PSSession
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2
+    Current status: AVAILABLE
+
+      Service Name: GetCertificate
+      Service Type: USER
+      Routine Name: GetCertificate
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 179
+    Current status: AVAILABLE
+
+      Service Name: MCFMailAttach
+      Service Type: USER
+      Routine Name: MCFMailAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RenRequest
+      Service Type: USER
+      Routine Name: RenRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: McfChkAttAuth
+      Service Type: USER
+      Routine Name: McfChkAttAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PpmMonSvc
+      Service Type: USER
+      Routine Name: PpmMonSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ReplayEncrypt
+      Service Type: USER
+      Routine Name: ReplayEncrypt
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PubContract
+      Service Type: USER
+      Routine Name: PubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SubContract
+      Service Type: USER
+      Routine Name: SubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetPub
+      Service Type: USER
+      Routine Name: GetPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: CancelPub
+      Service Type: USER
+      Routine Name: CancelPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ResubmitPub
+      Service Type: USER
+      Routine Name: ResubmitPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: UpdatePubData
+      Service Type: USER
+      Routine Name: UpdatePubData
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Publish
+      Service Type: USER
+      Routine Name: Publish
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: OpnQryExecute
+      Service Type: USER
+      Routine Name: OpnQryExecute
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: OpnQryDescribe
+      Service Type: USER
+      Routine Name: OpnQryDescribe
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: TdmUtilSvc
+      Service Type: USER
+      Routine Name: TdmUtilSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetExplain
+      Service Type: USER
+      Routine Name: StmGetExplain
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RemoteCall
+      Service Type: USER
+      Routine Name: RemoteCall
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: QdmGetListSvc
+      Service Type: USER
+      Routine Name: QdmGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsdGetListSvc
+      Service Type: USER
+      Routine Name: PsdGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetAppImages
+      Service Type: USER
+      Routine Name: GetAppImages
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmGetBOEInfo
+      Service Type: USER
+      Routine Name: PsmGetBOEInfo
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmChkUserRole
+      Service Type: USER
+      Routine Name: PsmChkUserRole
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 6
+    Current status: AVAILABLE
+
+      Service Name: PsmChkRptAuth
+      Service Type: USER
+      Routine Name: PsmChkRptAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprPrePopupPC
+      Service Type: USER
+      Routine Name: PprPrePopupPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprMItemSelPC
+      Service Type: USER
+      Routine Name: PprMItemSelPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSecStart
+      Service Type: USER
+      Routine Name: PprSecStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchSave
+      Service Type: USER
+      Routine Name: PprSearchSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchStart
+      Service Type: USER
+      Routine Name: PprSearchStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDeleteRow
+      Service Type: USER
+      Routine Name: PprDeleteRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprInsertRow
+      Service Type: USER
+      Routine Name: PprInsertRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDefault
+      Service Type: USER
+      Routine Name: PprDefault
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFieldChange
+      Service Type: USER
+      Routine Name: PprFieldChange
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprChangeValue
+      Service Type: USER
+      Routine Name: PprChangeValue
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFullSave
+      Service Type: USER
+      Routine Name: PprFullSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSave
+      Service Type: USER
+      Routine Name: PprSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprLoad
+      Service Type: USER
+      Routine Name: PprLoad
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ObjectAccess
+      Service Type: USER
+      Routine Name: ObjectAccess
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrReplayCache
+      Service Type: USER
+      Routine Name: MgrReplayCache
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrUpdObject
+      Service Type: USER
+      Routine Name: MgrUpdObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrGetObject
+      Service Type: USER
+      Routine Name: MgrGetObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MenuList
+      Service Type: USER
+      Routine Name: MenuList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaMgrGetObj
+      Service Type: USER
+      Routine Name: JavaMgrGetObj
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30561, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 1
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: WsrpPortletSvc
+      Service Type: USER
+      Routine Name: WsrpPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: UpdatePubData
+      Service Type: USER
+      Routine Name: UpdatePubData
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Template
+      Service Type: USER
+      Routine Name: Template
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: TdmUtilSvc
+      Service Type: USER
+      Routine Name: TdmUtilSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SubContract
+      Service Type: USER
+      Routine Name: SubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetTimeOut
+      Service Type: USER
+      Routine Name: StmGetTimeOut
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetExplain
+      Service Type: USER
+      Routine Name: StmGetExplain
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmChgPswd
+      Service Type: USER
+      Routine Name: StmChgPswd
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlRequest
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlQuery
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SamGetParmsSvc
+      Service Type: USER
+      Routine Name: SamGetParmsSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ResubmitPub
+      Service Type: USER
+      Routine Name: ResubmitPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ReplayEncrypt
+      Service Type: USER
+      Routine Name: ReplayEncrypt
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RenRequest
+      Service Type: USER
+      Routine Name: RenRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RemoteCall
+      Service Type: USER
+      Routine Name: RemoteCall
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RamList
+      Service Type: USER
+      Routine Name: RamList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: QdmGetListSvc
+      Service Type: USER
+      Routine Name: QdmGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Publish
+      Service Type: USER
+      Routine Name: Publish
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PubContract
+      Service Type: USER
+      Routine Name: PubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmGetBOEInfo
+      Service Type: USER
+      Routine Name: PsmGetBOEInfo
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmChkUserRole
+      Service Type: USER
+      Routine Name: PsmChkUserRole
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 11
+    Current status: AVAILABLE
+
+      Service Name: PsmChkRptAuth
+      Service Type: USER
+      Routine Name: PsmChkRptAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsdGetListSvc
+      Service Type: USER
+      Routine Name: PsdGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSecStart
+      Service Type: USER
+      Routine Name: PprSecStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchStart
+      Service Type: USER
+      Routine Name: PprSearchStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchSave
+      Service Type: USER
+      Routine Name: PprSearchSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSave
+      Service Type: USER
+      Routine Name: PprSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprPrePopupPC
+      Service Type: USER
+      Routine Name: PprPrePopupPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprMItemSelPC
+      Service Type: USER
+      Routine Name: PprMItemSelPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprLoad
+      Service Type: USER
+      Routine Name: PprLoad
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprInsertRow
+      Service Type: USER
+      Routine Name: PprInsertRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFullSave
+      Service Type: USER
+      Routine Name: PprFullSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFieldChange
+      Service Type: USER
+      Routine Name: PprFieldChange
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDeleteRow
+      Service Type: USER
+      Routine Name: PprDeleteRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDefault
+      Service Type: USER
+      Routine Name: PprDefault
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprChangeValue
+      Service Type: USER
+      Routine Name: PprChangeValue
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PpmMonSvc
+      Service Type: USER
+      Routine Name: PpmMonSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PortalRegistry
+      Service Type: USER
+      Routine Name: PortalRegistry
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1321
+    Current status: AVAILABLE
+
+      Service Name: PSSession
+      Service Type: USER
+      Routine Name: PSSession
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2
+    Current status: AVAILABLE
+
+      Service Name: PSBusInterlink
+      Service Type: USER
+      Routine Name: PSBusInterlink
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBusComp
+      Service Type: USER
+      Routine Name: PSBusComp
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2
+    Current status: AVAILABLE
+
+      Service Name: OpnQryExecute
+      Service Type: USER
+      Routine Name: OpnQryExecute
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: OpnQryDescribe
+      Service Type: USER
+      Routine Name: OpnQryDescribe
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ObjectAccess
+      Service Type: USER
+      Routine Name: ObjectAccess
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrUpdObject
+      Service Type: USER
+      Routine Name: MgrUpdObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrReplayCache
+      Service Type: USER
+      Routine Name: MgrReplayCache
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrGetObject
+      Service Type: USER
+      Routine Name: MgrGetObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MenuList
+      Service Type: USER
+      Routine Name: MenuList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: McfChkAttAuth
+      Service Type: USER
+      Routine Name: McfChkAttAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MCFMailAttach
+      Service Type: USER
+      Routine Name: MCFMailAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: KeyStore
+      Service Type: USER
+      Routine Name: KeyStore
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaPortletSvc
+      Service Type: USER
+      Routine Name: JavaPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaMgrGetObj
+      Service Type: USER
+      Routine Name: JavaMgrGetObj
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: IsValidUserSvc
+      Service Type: USER
+      Routine Name: IsValidUserSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: IntegrationSvc
+      Service Type: USER
+      Routine Name: IntegrationSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1
+    Current status: AVAILABLE
+
+      Service Name: ICWorkList
+      Service Type: USER
+      Routine Name: ICWorkList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICScript
+      Service Type: USER
+      Routine Name: ICScript
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2519
+    Current status: AVAILABLE
+
+      Service Name: ICQuery
+      Service Type: USER
+      Routine Name: ICQuery
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICPanel
+      Service Type: USER
+      Routine Name: ICPanel
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 107
+    Current status: AVAILABLE
+
+      Service Name: ICNav
+      Service Type: USER
+      Routine Name: ICNav
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICLifeEvent
+      Service Type: USER
+      Routine Name: ICLifeEvent
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: HomepageT
+      Service Type: USER
+      Routine Name: HomepageT
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 107
+    Current status: AVAILABLE
+
+      Service Name: GetWebProfile
+      Service Type: USER
+      Routine Name: GetWebProfile
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetPub
+      Service Type: USER
+      Routine Name: GetPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetDebugParms
+      Service Type: USER
+      Routine Name: GetDebugParms
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetCertificate
+      Service Type: USER
+      Routine Name: GetCertificate
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 169
+    Current status: AVAILABLE
+
+      Service Name: GetAppImages
+      Service Type: USER
+      Routine Name: GetAppImages
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: FileAttach
+      Service Type: USER
+      Routine Name: FileAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: CancelPub
+      Service Type: USER
+      Routine Name: CancelPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30582, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 2
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: WsrpPortletSvc
+      Service Type: USER
+      Routine Name: WsrpPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: UpdatePubData
+      Service Type: USER
+      Routine Name: UpdatePubData
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Template
+      Service Type: USER
+      Routine Name: Template
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: TdmUtilSvc
+      Service Type: USER
+      Routine Name: TdmUtilSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SubContract
+      Service Type: USER
+      Routine Name: SubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetTimeOut
+      Service Type: USER
+      Routine Name: StmGetTimeOut
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmGetExplain
+      Service Type: USER
+      Routine Name: StmGetExplain
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: StmChgPswd
+      Service Type: USER
+      Routine Name: StmChgPswd
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlRequest
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SqlQuery
+      Service Type: USER
+      Routine Name: SqlRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: SamGetParmsSvc
+      Service Type: USER
+      Routine Name: SamGetParmsSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ResubmitPub
+      Service Type: USER
+      Routine Name: ResubmitPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ReplayEncrypt
+      Service Type: USER
+      Routine Name: ReplayEncrypt
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RenRequest
+      Service Type: USER
+      Routine Name: RenRequest
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RemoteCall
+      Service Type: USER
+      Routine Name: RemoteCall
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: RamList
+      Service Type: USER
+      Routine Name: RamList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: QdmGetListSvc
+      Service Type: USER
+      Routine Name: QdmGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: Publish
+      Service Type: USER
+      Routine Name: Publish
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PubContract
+      Service Type: USER
+      Routine Name: PubContract
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmGetBOEInfo
+      Service Type: USER
+      Routine Name: PsmGetBOEInfo
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsmChkUserRole
+      Service Type: USER
+      Routine Name: PsmChkUserRole
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 6
+    Current status: AVAILABLE
+
+      Service Name: PsmChkRptAuth
+      Service Type: USER
+      Routine Name: PsmChkRptAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PsdGetListSvc
+      Service Type: USER
+      Routine Name: PsdGetListSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSecStart
+      Service Type: USER
+      Routine Name: PprSecStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchStart
+      Service Type: USER
+      Routine Name: PprSearchStart
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSearchSave
+      Service Type: USER
+      Routine Name: PprSearchSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprSave
+      Service Type: USER
+      Routine Name: PprSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprPrePopupPC
+      Service Type: USER
+      Routine Name: PprPrePopupPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprMItemSelPC
+      Service Type: USER
+      Routine Name: PprMItemSelPC
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprLoad
+      Service Type: USER
+      Routine Name: PprLoad
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprInsertRow
+      Service Type: USER
+      Routine Name: PprInsertRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFullSave
+      Service Type: USER
+      Routine Name: PprFullSave
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprFieldChange
+      Service Type: USER
+      Routine Name: PprFieldChange
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDeleteRow
+      Service Type: USER
+      Routine Name: PprDeleteRow
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprDefault
+      Service Type: USER
+      Routine Name: PprDefault
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PprChangeValue
+      Service Type: USER
+      Routine Name: PprChangeValue
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PpmMonSvc
+      Service Type: USER
+      Routine Name: PpmMonSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PortalRegistry
+      Service Type: USER
+      Routine Name: PortalRegistry
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1254
+    Current status: AVAILABLE
+
+      Service Name: PSSession
+      Service Type: USER
+      Routine Name: PSSession
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2
+    Current status: AVAILABLE
+
+      Service Name: PSBusInterlink
+      Service Type: USER
+      Routine Name: PSBusInterlink
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBusComp
+      Service Type: USER
+      Routine Name: PSBusComp
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2
+    Current status: AVAILABLE
+
+      Service Name: OpnQryExecute
+      Service Type: USER
+      Routine Name: OpnQryExecute
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: OpnQryDescribe
+      Service Type: USER
+      Routine Name: OpnQryDescribe
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ObjectAccess
+      Service Type: USER
+      Routine Name: ObjectAccess
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrUpdObject
+      Service Type: USER
+      Routine Name: MgrUpdObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrReplayCache
+      Service Type: USER
+      Routine Name: MgrReplayCache
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MgrGetObject
+      Service Type: USER
+      Routine Name: MgrGetObject
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MenuList
+      Service Type: USER
+      Routine Name: MenuList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: McfChkAttAuth
+      Service Type: USER
+      Routine Name: McfChkAttAuth
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: MCFMailAttach
+      Service Type: USER
+      Routine Name: MCFMailAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: KeyStore
+      Service Type: USER
+      Routine Name: KeyStore
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaPortletSvc
+      Service Type: USER
+      Routine Name: JavaPortletSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: JavaMgrGetObj
+      Service Type: USER
+      Routine Name: JavaMgrGetObj
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: IsValidUserSvc
+      Service Type: USER
+      Routine Name: IsValidUserSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: IntegrationSvc
+      Service Type: USER
+      Routine Name: IntegrationSvc
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICWorkList
+      Service Type: USER
+      Routine Name: ICWorkList
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 1
+    Current status: AVAILABLE
+
+      Service Name: ICScript
+      Service Type: USER
+      Routine Name: ICScript
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 2584
+    Current status: AVAILABLE
+
+      Service Name: ICQuery
+      Service Type: USER
+      Routine Name: ICQuery
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICPanel
+      Service Type: USER
+      Routine Name: ICPanel
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 118
+    Current status: AVAILABLE
+
+      Service Name: ICNav
+      Service Type: USER
+      Routine Name: ICNav
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: ICLifeEvent
+      Service Type: USER
+      Routine Name: ICLifeEvent
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: HomepageT
+      Service Type: USER
+      Routine Name: HomepageT
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 108
+    Current status: AVAILABLE
+
+      Service Name: GetWebProfile
+      Service Type: USER
+      Routine Name: GetWebProfile
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetPub
+      Service Type: USER
+      Routine Name: GetPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetDebugParms
+      Service Type: USER
+      Routine Name: GetDebugParms
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: GetCertificate
+      Service Type: USER
+      Routine Name: GetCertificate
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 165
+    Current status: AVAILABLE
+
+      Service Name: GetAppImages
+      Service Type: USER
+      Routine Name: GetAppImages
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: FileAttach
+      Service Type: USER
+      Routine Name: FileAttach
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: CancelPub
+      Service Type: USER
+      Routine Name: CancelPub
+         Prog Name: /psoft/patst91/bin/PSAPPSRV
+        Queue Name: APPQ
+        Process ID: 30603, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 3
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSPUBDSP_SNCPUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSPUBDSP
+        Queue Name: PUBDQ_SNCPUB
+        Process ID: 30773, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1100
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 14
+    Current status: AVAILABLE
+
+      Service Name: PSPUBDSP_USRPUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSPUBDSP
+        Queue Name: PUBDQ_USRPUB
+        Process ID: 30706, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 500
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 7
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_SNCPUB
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_SNCPUB
+        Process ID: 30769, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1101
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 7
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_USRPUB
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_USRPUB
+        Process ID: 30702, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 501
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 42
+    Current status: AVAILABLE
+
+      Service Name: PSBRKDSP_SNCBRK
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSBRKDSP
+        Queue Name: BRKDQ_SNCBRK
+        Process ID: 30766, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1000
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 11
+    Current status: AVAILABLE
+
+      Service Name: PSBRKDSP_USRBRK
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSBRKDSP
+        Queue Name: BRKDQ_USRBRK
+        Process ID: 30699, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 400
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 3
+    Current status: AVAILABLE
+
+      Service Name: PSBRKHND_SNCBRK
+      Service Type: USER
+      Routine Name: BrkProcess
+         Prog Name: /psoft/patst91/bin/PSBRKHND
+        Queue Name: BRKHQ_SNCBRK
+        Process ID: 30763, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1001
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 7
+    Current status: AVAILABLE
+
+      Service Name: PSBRKHND_USRBRK
+      Service Type: USER
+      Routine Name: BrkProcess
+         Prog Name: /psoft/patst91/bin/PSBRKHND
+        Queue Name: BRKHQ_USRBRK
+        Process ID: 30696, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 401
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 14
+    Current status: AVAILABLE
+
+      Service Name: PSSUBDSP_PERSUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSSUBDSP
+        Queue Name: SUBDQ_PERSUB
+        Process ID: 30824, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1500
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBDSP_WRKSUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSSUBDSP
+        Queue Name: SUBDQ_WRKSUB
+        Process ID: 30760, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 900
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBDSP_dflt
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSSUBDSP
+        Queue Name: SUBDQ_dflt
+        Process ID: 30693, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 300
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 50
+    Current status: AVAILABLE
+
+      Service Name: PSSUBHND_PERSUB
+      Service Type: USER
+      Routine Name: SubConProcess
+         Prog Name: /psoft/patst91/bin/PSSUBHND
+        Queue Name: SUBHQ_PERSUB
+        Process ID: 30821, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1501
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBHND_WRKSUB
+      Service Type: USER
+      Routine Name: SubConProcess
+         Prog Name: /psoft/patst91/bin/PSSUBHND
+        Queue Name: SUBHQ_WRKSUB
+        Process ID: 30756, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 901
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSSUBHND_dflt
+      Service Type: USER
+      Routine Name: SubConProcess
+         Prog Name: /psoft/patst91/bin/PSSUBHND
+        Queue Name: SUBHQ_dflt
+        Process ID: 30690, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 301
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 35
+    Current status: AVAILABLE
+
+      Service Name: PSPUBDSP_PERPUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSPUBDSP
+        Queue Name: PUBDQ_PERPUB
+        Process ID: 30805, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1400
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSPUBDSP_WRKPUB
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSPUBDSP
+        Queue Name: PUBDQ_WRKPUB
+        Process ID: 30738, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 800
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSPUBDSP_dflt
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSPUBDSP
+        Queue Name: PUBDQ_dflt
+        Process ID: 30674, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 200
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 20
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_PERPUB
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_PERPUB
+        Process ID: 30801, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1401
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_WRKPUB
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_WRKPUB
+        Process ID: 30734, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 801
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_dflt
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_dflt
+        Process ID: 30662, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 201
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 3
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_dflt
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_dflt
+        Process ID: 30666, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 202
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 4
+    Current status: AVAILABLE
+
+      Service Name: PSPUBHND_dflt
+      Service Type: USER
+      Routine Name: PubConProcess
+         Prog Name: /psoft/patst91/bin/PSPUBHND
+        Queue Name: PUBHQ_dflt
+        Process ID: 30670, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 203
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 3
+    Current status: AVAILABLE
+
+      Service Name: PSBRKDSP_PERBRK
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSBRKDSP
+        Queue Name: BRKDQ_PERBRK
+        Process ID: 30798, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1300
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBRKDSP_WRKBRK
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSBRKDSP
+        Queue Name: BRKDQ_WRKBRK
+        Process ID: 30731, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 700
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBRKDSP_dflt
+      Service Type: USER
+      Routine Name: Dispatch
+         Prog Name: /psoft/patst91/bin/PSBRKDSP
+        Queue Name: BRKDQ_dflt
+        Process ID: 30659, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 100
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 39
+    Current status: AVAILABLE
+
+      Service Name: SqlAccess
+      Service Type: USER
+      Routine Name: SqlAccess
+         Prog Name: /psoft/patst91/bin/PSSAMSRV
+        Queue Name: SAMQ
+        Process ID: 30624, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 100
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBRKHND_PERBRK
+      Service Type: USER
+      Routine Name: BrkProcess
+         Prog Name: /psoft/patst91/bin/PSBRKHND
+        Queue Name: BRKHQ_PERBRK
+        Process ID: 30795, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 1301
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBRKHND_WRKBRK
+      Service Type: USER
+      Routine Name: BrkProcess
+         Prog Name: /psoft/patst91/bin/PSBRKHND
+        Queue Name: BRKHQ_WRKBRK
+        Process ID: 30728, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 701
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+      Service Name: PSBRKHND_dflt
+      Service Type: USER
+      Routine Name: BrkProcess
+         Prog Name: /psoft/patst91/bin/PSBRKHND
+        Queue Name: BRKHQ_dflt
+        Process ID: 30656, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: PUBSUB, Server ID: 101
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 45
+    Current status: AVAILABLE
+
+      Service Name: SqlAccess
+      Service Type: USER
+      Routine Name: SqlAccess
+         Prog Name: /psoft/patst91/bin/PSSAMSRV
+        Queue Name: SAMQ
+        Process ID: 30640, Machine ID: test-ps-app1.erp.ufl.edu
+          Group ID: APPSRV, Server ID: 101
+      Current Load: 50
+  Current Priority: 50
+  Current Trantime: 30
+ Current Blocktime: 0
+ Current BUFTYPECONV: 0
+     Requests Done: 0
+    Current status: AVAILABLE
+
+Printing the command pt
+> pt
+>> index=0	gtrid=x0 x259a633a xf2
+:  Machine id: SITE1, Transaction status: TMGACTIVE
+   Group count: 1, timeout: 30, time left: 39
+   Known participants:
+    group: BANKB2, status: TMGACTIVE, remote, coord
+
+    >> index=0	gtrid=x0 x259a633a xf2
+    :  Machine id: SITE1, Transaction status: TMGABORTONLY
+       Group count: 1, timeout: 30, time left: 39
+       Known participants:
+        group: BANKB2, status: TMGACTIVE, remote, coord
+
+     >> index=0	gtrid=x0 x259a633a xf2
+        :  Machine id: SITE1, Transaction status: TMGABORTONLY
+           Group count: 1, timeout: 30, time left: 39
+           Known participants:
+            group: BANKB2, status: TMGACTIVE, remote, coord
+
+             >> index=0	gtrid=x0 x259a633a xf2
+                    :  Machine id: SITE1, Transaction status: TMGABORTONLY
+                       Group count: 1, timeout: 30, time left: 39
+                       Known participants:
+                        group: BANKB2, status: TMGACTIVE, remote, coord
+
+Printing the command q
+> q

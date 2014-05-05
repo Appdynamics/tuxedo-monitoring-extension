@@ -1,0 +1,23 @@
+<monitor>
+    <name>tuxedo-monitor</name>
+    <type>managed</type>
+    <description>Tuxedo Monitoring Extension</description>
+    <monitor-configuration></monitor-configuration>
+    <monitor-run-task>
+        <execution-style>periodic</execution-style>
+        <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+        <name>Tuxedo Monitor Run task</name>
+        <display-name>Tuxedo Monitor Run task</display-name>
+        <description>Tuxedo Monitor Run task</description>
+        <type>java</type>
+        <execution-timeout-in-secs>60</execution-timeout-in-secs>
+        <task-arguments>
+            <argument name="tmadmin-path" is-required="true" default-value="/path/to/tuxedo/bin/tmadmin"/>
+            <argument name="metric-prefix" is-required="true" default-value="Custom Metrics|Tuxedo"/>
+        </task-arguments>
+        <java-task>
+            <classpath>tuxedo-monitoring-extension.jar</classpath>
+            <impl-class>com.appdynamics.extensions.tuxedo.TuxedoMonitor</impl-class>
+        </java-task>
+    </monitor-run-task>
+</monitor>

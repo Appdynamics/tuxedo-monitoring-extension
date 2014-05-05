@@ -1,0 +1,42 @@
+<commands>
+    <command name="bbs" metric-rel-path="Bulletin Board" type="verbose">
+        <metrics>
+            <metric raw-name="Current number of servers" metric-name="Servers"/>
+            <metric raw-name="Current number of services" metric-name="Services"/>
+            <metric raw-name="Current number of request queues" metric-name="Queues"/>
+            <metric raw-name="Current number of server groups" metric-name="Groups"/>
+            <metric raw-name="Current number of interfaces" metric-name="Interfaces"/>
+        </metrics>
+    </command>
+    <command name="psc" metric-rel-path="${group}|Services|${service}">
+        <params>
+            <param raw-name="Service Name" param-name="service"/>
+            <param raw-name="Group ID" param-name="group" regex="^(.+?),.+$"/>
+        </params>
+        <metrics>
+            <metric raw-name="Requests Done" metric-name="Requests Done"/>
+            <metric raw-name="Current status" metric-name="Status" default-value="0">
+                <value-mapping>
+                    <mapping raw-value="AVAILABLE" metric-value="1"/>
+                </value-mapping>
+            </metric>
+        </metrics>
+    </command>
+    <command name="psr" metric-rel-path="${group}|Queues|${queue}">
+        <params>
+            <param raw-name="Queue Name" param-name="service"/>
+            <param raw-name="Group ID" param-name="group" regex="^(.+?),.+$"/>
+        </params>
+        <metrics>
+            <metric raw-name="Requests done" metric-name="Requests Done"/>
+            <metric raw-name="Load done" metric-name="Load done"/>
+            <metric raw-name="Current Status" metric-name="Status" default-value="0">
+                <value-mapping>
+                    <mapping raw-value="IDLE" metric-value="0"/>
+                    <mapping raw-value="BUSY" metric-value="1"/>
+                </value-mapping>
+            </metric>
+
+        </metrics>
+    </command>
+</commands>
