@@ -1,0 +1,11 @@
+- tmadminCommand: sudo -u tuxUser1 -i tmadmin -r
+  domainName: domain1
+  envVariables:
+    - name: TUXCONFIG
+      value: /path/to/domain1/TUXCONFIG/file
+
+- tmadminCommand: sudo -u tuxUser2 -i /path/to/tuxedo/bin/tmadmin -r
+  domainName: domain2
+  envVariables:
+    - name: TUXCONFIG
+      value: /path/to/domain2/TUXCONFIG/file

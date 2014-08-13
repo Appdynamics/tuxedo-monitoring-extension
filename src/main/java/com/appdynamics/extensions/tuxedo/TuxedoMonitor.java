@@ -1,7 +1,10 @@
 package com.appdynamics.extensions.tuxedo;
 
-import com.appdynamics.TaskInputArgs;
 import com.appdynamics.extensions.ArgumentsValidator;
+import com.appdynamics.extensions.PathResolver;
+import com.appdynamics.extensions.tuxedo.conf.Domain;
+import com.appdynamics.extensions.tuxedo.conf.EnvVariable;
+import com.appdynamics.extensions.yml.YmlReader;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -17,6 +20,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,37 +42,57 @@ public class TuxedoMonitor extends AManagedMonitor {
     private static final Map<String, String> defaultArgs = new HashMap<String, String>() {{
         put("metric-prefix", "Custom Metrics|Tuxedo");
     }};
+    public static final String[] TUX_COMMANDS = new String[]{"psc", "psr", "bbs", "pt"};
+
+    //This is to compare the current and previous value to calculate per min metrics.
+    private Map<String, Long> previousValueMap;
 
     public TuxedoMonitor() {
         String version = TuxedoMonitor.class.getPackage().getImplementationTitle();
         String msg = String.format("Using Monitor Version [%s]", version);
         logger.info(msg);
         System.out.println(msg);
+        previousValueMap = new HashMap<String, Long>();
     }
 
     public TaskOutput execute(Map<String, String> argsMap, TaskExecutionContext executionContext)
             throws TaskExecutionException {
         ArgumentsValidator.validateArguments(argsMap, defaultArgs);
-        String path = argsMap.get("tmadmin-path");
-        if (!Strings.isNullOrEmpty(path)) {
-            File file = new File(path);
-            if (file.exists()) {
-                execute(new String[]{"psc", "psr", "bbs", "pt"}, argsMap);
-            } else {
-                logger.error("The tmadmin is not available at the path \"{}\". Not running TuxedoMonitor"
-                        , file.getAbsolutePath());
-            }
+        String configFile = argsMap.get("config-file");
+        File file = PathResolver.getFile(configFile, AManagedMonitor.class);
+        if (file != null) {
+            Domain[] domains = YmlReader.readFromFile(file, Domain[].class);
+            execute(domains);
         } else {
-            logger.error("The property tmadmin-path is not set in the monitor.xml. Not running TuxedoMonitor");
+            logger.error("Cannot locate the config file given by the path {}", configFile);
         }
         return new TaskOutput("Tuxedo Process Completed");
     }
 
-    public void execute(String[] commands, Map<String, String> argsMap) {
-        String path = argsMap.get("tmadmin-path");
-        String metricPrefix = argsMap.get(TaskInputArgs.METRIC_PREFIX);
+    private void execute(Domain[] domains) {
+        if (domains != null && domains.length > 0) {
+            for (int i = 0; i < domains.length; i++) {
+                Domain domain = domains[i];
+                String metricPrefix = getMetricPrefix(domain, i);
+                logger.info("Collecting the Tuxedo stats for the domain {}", metricPrefix);
+                execute(domain, metricPrefix, TUX_COMMANDS);
+            }
+        } else {
+            logger.error("Tuxedo domains are note added in the config.yml file.");
+        }
+    }
+
+    private void execute(Domain domain, String metricPrefix, String[] tuxCommands) {
         DataReader reader = null;
-        ProcessBuilder pb = new ProcessBuilder(path, "-r");
+        ProcessBuilder pb = createProcessBuilder(domain);
+        EnvVariable[] envVariables = domain.getEnvVariables();
+        if (envVariables != null && envVariables.length > 0) {
+            Map<String, String> environment = pb.environment();
+            for (EnvVariable variable : envVariables) {
+                environment.put(variable.getName(), variable.getValue());
+                logger.debug("Adding the environment variable {}:{}", variable.getName(), variable.getValue());
+            }
+        }
         try {
             logger.debug("Initializing the process {}");
             Process process = pb.start();
@@ -84,8 +108,8 @@ public class TuxedoMonitor extends AManagedMonitor {
             dataReaderThread.start();
             writeCommand("echo on", out);
             writeCommand("verbose on", out);
-            if (commands != null && commands.length > 0) {
-                for (String command : commands) {
+            if (tuxCommands != null && tuxCommands.length > 0) {
+                for (String command : tuxCommands) {
                     writeCommand(command, out);
                 }
             }
@@ -99,6 +123,28 @@ public class TuxedoMonitor extends AManagedMonitor {
             logger.error("Error while interacting with Tuxedo", e);
         } catch (InterruptedException e) {
             logger.error("", e);
+        }
+    }
+
+    private ProcessBuilder createProcessBuilder(Domain domain) {
+        if (!Strings.isNullOrEmpty(domain.getTmadminCommand())) {
+            String command = domain.getTmadminCommand();
+            String[] split = command.split(" ");
+            if (logger.isDebugEnabled()) {
+                logger.debug("The original command array is {}", Arrays.toString(split));
+            }
+            return new ProcessBuilder(split);
+        } else if (!Strings.isNullOrEmpty(domain.getTmadminPath())) {
+            String tmadminPath = domain.getTmadminPath();
+            if (new File(tmadminPath).exists()) {
+                logger.debug("Creating the process builder with {} and -r", tmadminPath);
+                return new ProcessBuilder(tmadminPath, "-r");
+            } else {
+                throw new RuntimeException("tmadminPath is not valid " + tmadminPath);
+            }
+        } else {
+            logger.error("The tmadmin command = {}, path = {}", domain.getTmadminCommand(), domain.getTmadminPath());
+            throw new RuntimeException("The tmadminCommand and tmadminPath are empty.");
         }
     }
 
@@ -173,6 +219,12 @@ public class TuxedoMonitor extends AManagedMonitor {
                     if (reqDone != null) {
                         String metricPath = String.format(metricPathPattern, groupId, serviceName, "Requests Done");
                         printCollectiveObservedCurrent(metricPath, reqDone);
+                        Long perMinValue = getPerMinValue(metricPath, reqDone);
+                        if (perMinValue != null) {
+                            metricPath = String.format(metricPathPattern, groupId, serviceName, "Requests per Minute");
+                            printCollectiveObservedCurrent(metricPath, perMinValue.toString());
+                        }
+
                     }
                     if (status != null) {
                         String metricPath = String.format(metricPathPattern, groupId, serviceName, "Availability");
@@ -216,11 +268,22 @@ public class TuxedoMonitor extends AManagedMonitor {
                     if (reqDone != null) {
                         String metricPath = String.format(metricPathPattern, groupId, qName, "Requests Done");
                         printCollectiveObservedCurrent(metricPath, reqDone);
+                        Long perMinValue = getPerMinValue(metricPath, reqDone);
+                        if (perMinValue != null) {
+                            metricPath = String.format(metricPathPattern, groupId, qName, "Requests per Minute");
+                            printCollectiveObservedCurrent(metricPath, perMinValue.toString());
+                        }
+
                     }
 
                     if (loadDone != null) {
                         String metricPath = String.format(metricPathPattern, groupId, qName, "Load Done");
                         printCollectiveObservedCurrent(metricPath, loadDone);
+                        Long perMinValue = getPerMinValue(metricPath, loadDone);
+                        if (perMinValue != null) {
+                            metricPath = String.format(metricPathPattern, groupId, qName, "Load per Minute");
+                            printCollectiveObservedCurrent(metricPath, perMinValue.toString());
+                        }
                     }
                     if (upTime != null) {
                         long mins = convertToMinutes(upTime);
@@ -337,6 +400,24 @@ public class TuxedoMonitor extends AManagedMonitor {
         out.write(LINE_SEPARATOR);
     }
 
+
+    //Assuming that the extension runs every minute
+    private Long getPerMinValue(String metricPath, String currentValStr) {
+        if (!Strings.isNullOrEmpty(currentValStr)) {
+            try {
+                long currentValue = Long.parseLong(currentValStr);
+                Long previousValue = previousValueMap.get(metricPath);
+                previousValueMap.put(metricPath, currentValue);
+                if (previousValue != null) {
+                    return currentValue - previousValue;
+                }
+            } catch (NumberFormatException e) {
+                logger.error("The value {} is not parsable", currentValStr);
+            }
+        }
+        return null;
+    }
+
     private void printCollectiveObservedCurrent(String metricPath, String metricValue) {
         printMetric(metricPath, metricValue,
                 MetricWriter.METRIC_AGGREGATION_TYPE_OBSERVATION,
@@ -365,11 +446,28 @@ public class TuxedoMonitor extends AManagedMonitor {
         }
     }
 
-    public static void main(String[] args) {
-        String path = "/home/abey/oracle/tuxedo11gR1/bin/tmadmin";
-        HashMap<String, String> argsMap = Maps.newHashMap();
-        argsMap.put("metric-prefix", "Custom Metrics|Tuxedo");
-        argsMap.put("tmadmin-path", path);
-        new TuxedoMonitor().execute(new String[]{"psc", "psr", "bbs", "pt"}, argsMap);
+    private String getMetricPrefix(Domain domain, int index) {
+        String metricPrefix = domain.getMetricPrefix();
+        logger.debug("The metric prefix from the config file is {}", metricPrefix);
+        if (Strings.isNullOrEmpty(metricPrefix)) {
+            String domainName = domain.getDomainName();
+            logger.debug("The domain name from the config file is {}", domainName);
+            if (!Strings.isNullOrEmpty(domainName)) {
+                metricPrefix = "Custom Metrics|Tuxedo|" + domainName;
+            }
+        }
+        if (Strings.isNullOrEmpty(metricPrefix)) {
+            metricPrefix = "Custom Metrics|Tuxedo|Domain" + index;
+        }
+        logger.debug("The final metric prefix is {}", metricPrefix);
+        return metricPrefix;
     }
+
+//    public static void main(String[] args) {
+//        String path = "/home/abey/oracle/tuxedo11gR1/bin/tmadmin";
+//        HashMap<String, String> argsMap = Maps.newHashMap();
+//        argsMap.put("metric-prefix", "Custom Metrics|Tuxedo");
+//        argsMap.put("tmadmin-path", path);
+//        new TuxedoMonitor().execute(new String[]{"psc", "psr", "bbs", "pt"}, argsMap);
+//    }
 }

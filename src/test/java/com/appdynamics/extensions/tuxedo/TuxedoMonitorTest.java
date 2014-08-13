@@ -1,12 +1,11 @@
 package com.appdynamics.extensions.tuxedo;
 
-import com.appdynamics.extensions.tuxedo.TuxedoMonitor;
+import com.appdynamics.extensions.tuxedo.conf.Domain;
+import com.appdynamics.extensions.yml.YmlReader;
+import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,11 +24,17 @@ public class TuxedoMonitorTest {
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         List<String> list = new ArrayList<String>();
         String temp;
-        while((temp=br.readLine())!=null){
+        while ((temp = br.readLine()) != null) {
             list.add(temp);
         }
         br.close();
         TuxedoMonitor monitor = new TuxedoMonitor();
-        monitor.processOutput(list,"Tuxedo");
+        monitor.processOutput(list, "Tuxedo");
+    }
+
+    @Test
+    public void testReadValidConfiguration() throws FileNotFoundException {
+        Domain[] domains = YmlReader.readFromClasspath("/conf/config.yml", Domain[].class);
+        Assert.assertEquals(2, domains.length);
     }
 }
