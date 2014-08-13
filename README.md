@@ -13,12 +13,20 @@ The Tuxedo server should be installed and configured. Please find refer to this 
 
 1. Run "mvn clean install"
 2. Download and unzip the file 'target/TuxedoMonitor.zip' to \<machineagent install dir\>/monitors
-3. Open monitor.xml and configure the Tuxedo arguments.
-<pre>
+3. Open config.yml and configure the Tuxedo arguments.
 ```
-<argument name="tmadmin-path" is-required="true" default-value="/path/to/tuxedo/bin/tmadmin"/>
+- tmadminCommand: tmadmin -r
+  domainName: domain1
+  envVariables:
+    - name: TUXCONFIG
+      value: /path/to/domain1/TUXCONFIG/file
+
+- tmadminCommand: tmadmin -r
+  domainName: domain2
+  envVariables:
+    - name: TUXCONFIG
+      value: /path/to/domain2/TUXCONFIG/file
 ```
-</pre>
 
 ##Metrics
 The following metrics are reported. The Metric Path is relative to the "metricPrefix" defined in the monitor.xml
@@ -50,8 +58,8 @@ Always feel free to fork and contribute any changes directly here on GitHub.
 
 ##Community
 
-Find out more in the [AppSphere](http://appsphere.appdynamics.com/t5/eXchange/Tuxedo-Monitoring-Extension/idi-p/5717) community.
+Find out more in the [AppSphere](http://community.appdynamics.com/t5/eXchange-Community-AppDynamics/Tuxedo-Monitoring-Extension/idi-p/9877) community.
 
 ##Support
 
-For any questions or feature request, please contact [AppDynamics Center of Excellence](mailto:help@appdynamics.com).
+For any questions or feature request, please contact [AppDynamics Help](mailto:help@appdynamics.com).
